@@ -1,7 +1,8 @@
 This project implements a Redis subset (a in-memory NoSQL database) using PHP language working with socket on port 7080. 
 
 The service listen to that port for requests, and can be used for multiple simultaneous connections. 
-With the connection established, it offers the following commands:  
+With the connection established, it offers the following commands:
+
 	"SET, GET, DEL, DBSIZE, INCR, ZADD, ZCARD, ZRANK and ZRANGE"
 
 The Redis mini server can be started from the command line using the command "php <path> miniRedis.php", 
@@ -14,6 +15,7 @@ In this project, there is also the version of connection via http, which the cli
 	"http: // localhost: 80 /? cmd = set% 20mykey% 20value" 
 
 or by command line :
+
 	"curl http: // localhost: 80 /? cmd = set% 20mykey% 20value"  
 
 It can be easily adapted and installed in any hosting service in order to serve any application over the internet.
